@@ -468,7 +468,7 @@ static int XAxiDma_Start(XAxiDma * InstancePtr)
 				Status = XAxiDma_BdRingStart(RxRingPtr);
 				if (Status != XST_SUCCESS) {
 					xdbg_printf(XDBG_DEBUG_ERROR,
-					"Start hw tx channel failed %d\r\n",
+					"Start hw rx channel failed %d\r\n",
 								Status);
 
 					return XST_DMA_ERROR;
